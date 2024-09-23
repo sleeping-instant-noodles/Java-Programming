@@ -1,0 +1,8 @@
+public class Exercise_3_2_2 {
+    public static void main(String[] args) {
+        double miles=100;
+        final double KILOMETERS_PRE_MILES=1.609;
+        double kilometers=miles*KILOMETERS_PRE_MILES;
+        System.out.println("The area "+kilometers+" kilometers in "+miles+" miles. ");
+    }
+}
