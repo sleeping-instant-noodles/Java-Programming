@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Exercise_3_2_9 {
+    public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print("Please enter your weight(pounds):");
+            double weightInPounds = scanner.nextDouble();
+
+            System.out.print("Please enter your height(inches):");
+            double heightInInches = scanner.nextDouble();
+
+            double weightInKilograms = weightInPounds * 0.45359237;
+            double heightInMeters = heightInInches * 0.0254;
+
+            double bmi = weightInKilograms / (heightInMeters * heightInMeters);
+
+            System.out.println("your BMI is: " + bmi);
+
+            scanner.close();
+    }
+}
