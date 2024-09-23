@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Exercise_3_2_10 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the driving distance:");
+        double distance= sc.nextDouble();
+        System.out.println("Enter miles per gallon:");
+        double milesGallon=sc.nextDouble();
+        System.out.println("Enter price per gallon:");
+        double priceGallon=sc.nextDouble();
+
+        double costDriving=distance/milesGallon*priceGallon;
+        System.out.println("The cost of driving is "+costDriving);
+    }
+}
